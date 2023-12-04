@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [FAQ Accordion solution](https://www.frontendmentor.io/solutions/responsive-faq-accordion-with-smooth-opening-content-panels-Fou1aI84J-)
 - Live Site URL: [Live demo FAQ accordion](https://aphelion-faq-accordion.netlify.app)
 
 ## My process
