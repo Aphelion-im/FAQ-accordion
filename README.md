@@ -14,9 +14,7 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 [Used tutorial](https://webdesign.tutsplus.com/how-to-build-an-accordion-using-only-html--cms-106881t)
@@ -26,68 +24,50 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
 Users should be able to:
 
 - Hide/Show the answer to a question when the question is clicked
-- Navigate the questions and hide/show answers using keyboard navigation alone
+- Navigate the questions and hide/show answers using keyboard navigation alone (Skipped this one!)
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![FAQ accordion](./assets/screenshots/faq-accordion.jpg)
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live demo FAQ accordion](https://aphelion-faq-accordion.netlify.app)
 
 ## My process
+Despite this project labeled as "Newbie" on [Frontendmentor.io](https://frontendmentor.io) I did wrestle with this project.
+
+I am satisfied with the result.
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS 3
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- JavaScript
 
 ### What I learned
+__Useful things I learned__:
+* That there are special HTML tags to build accordions with: `<summary>` and `<details>`. Alas, I could not animate these in CSS to open smoothly, so I chose another solution.
+* That classList.toggle("oneClass") can hold one class. But written like below, you can toggle classes.
+* That you can invert a boolean like this (When clicking a button, for example: `isBoolean = !isBoolean` (Also useful in React))
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
+```javascript
+  function toggleIcon(e) {
+        e.target.classList.toggle("plus");
+        e.target.classList.toggle("minus");
+    }
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I might build a version of this project in React and/or Vue.js. 
+
+I have not tested the end result on ipad, etc.
 
 ### Useful resources
 
@@ -97,7 +77,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Live demo ](https://www.your-site.com)
+- Website - [Live demo FAQ accordion ](https://aphelion-faq-accordion.netlify.app)
 - Frontend Mentor - [@Aphelion-im](https://www.frontendmentor.io/profile/Aphelion-im)
 
 
