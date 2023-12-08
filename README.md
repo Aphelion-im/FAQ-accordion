@@ -65,9 +65,12 @@ __Useful things I learned__:
 
 ### Continued development
 
-I might build a version of this project in React and/or Vue.js. 
+* I might build a version of this project in React and/or Vue.js. 
+* I am currently looking for a way to smoothen the opening of content panel with CSS only.
+* I would have preferred to create the accordion with the `<details` and `<summary>` tags, but I am unable to open the content panel smoothly.
+* Not satisfied that the plus and minus icons are now background images.
+* I might put some animation on the plus and minus icons when hovering over them.
 
-I have not tested the end result on ipad, etc.
 
 ### Useful resources
 
