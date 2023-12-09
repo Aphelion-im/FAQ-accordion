@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![FAQ accordion](./assets/screenshots/faq-accordion.jpg)
+![FAQ accordion](./assets/screenshots/screenshot-v2.jpg)
 
 ### Links
 
