@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c7cd16cb-2238-4392-b58f-2c040127f7ac/deploy-status)](https://app.netlify.com/sites/aphelion-faq-accordion/deploys)
 # Frontend Mentor - FAQ accordion solution
 
 This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
