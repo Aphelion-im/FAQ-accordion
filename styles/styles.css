@@ -3,154 +3,158 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ::selection {
-    background-color: #301534;
-    color: #fff;
+  background-color: #301534;
+  color: #fff;
 }
 
 body {
-    color: #301534;
-    font-size: 100%;
-    min-height: 100vh;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #F9EEFF;
-    overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  color: #301534;
+  font-size: 100%;
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f9eeff;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
+}
+
+.hidden {
+  display: none;
 }
 
 .background-image {
-    width: 100%;
-    height: 40%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #F9EEFF url("../assets/images/background-pattern-desktop.svg") no-repeat right top fixed;
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f9eeff url('../assets/images/background-pattern-desktop.svg')
+    no-repeat right top fixed;
 }
 
 h1 {
-    width: 100%;
-    font-size: 2.5rem;
-    margin-block: 1rem;
-    font-weight: 800;
+  width: 100%;
+  font-size: 2.5rem;
+  margin-block: 1rem;
+  font-weight: 800;
 }
 
 h1::before {
-    content: url('../assets/images/icon-star.svg');
-    position: relative;
-    top: 7px;
-    left: 0;
-    margin-right: 16px;
+  content: url('../assets/images/icon-star.svg');
+  position: relative;
+  top: 7px;
+  left: 0;
+  margin-right: 16px;
 }
 
 .accordion-title {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .accordion {
-    background-color: #fff;
-    border-radius: 16px;
-    padding: 24px;
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75);
-    margin-top: 48px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 0 1 90%;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.75);
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 1 90%;
 }
 
 .accordion-panel {
-    font-family: 'Open Sans', sans-serif;
-    padding-block: 18px;
-    width: 100%;
-    text-align: left;
-    outline: none;
-    font-size: 1.1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
+  font-family: 'Open Sans', sans-serif;
+  padding-block: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
 }
 
-.active, .accordion-panel:hover {
-    background-color: #F9EEFF;
+.active,
+.accordion-panel:hover {
+  background-color: #f9eeff;
 }
 
 .content {
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 200ms ease-out;
-    border-bottom: 1px solid #eee;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 200ms ease-out;
+  border-bottom: 1px solid #eee;
 }
 
 .accordion .content:last-child {
-    border: none;
+  border: none;
 }
 
 .content p {
-    color: rgba(79, 41, 87, 0.51);
-    font-size: 0.9rem;
-    padding-block: 24px;
+  color: rgba(79, 41, 87, 0.51);
+  font-size: 0.9rem;
+  padding-block: 24px;
 }
 
 .icon {
-    flex: 0 0 30px;
-    margin-left: 10%;
+  flex: 0 0 30px;
+  margin-left: 10%;
 }
 
 .plus {
-    background: url('../assets/images/icon-plus.svg') no-repeat center center;
-    background-size: 30px 30px;
+  background: url('../assets/images/icon-plus.svg') no-repeat center center;
+  background-size: 30px 30px;
 }
 
 .minus {
-    background: url('../assets/images/icon-minus.svg') no-repeat center center;
-    background-size: 30px 30px;
+  background: url('../assets/images/icon-minus.svg') no-repeat center center;
+  background-size: 30px 30px;
 }
 
 .plus:hover,
 .minus:hover {
-    filter: brightness(120%);
-    cursor: pointer;
+  filter: brightness(120%);
+  cursor: pointer;
 }
 
 .plus:active,
 .minus:active {
-    filter: hue-rotate(100deg);
+  filter: hue-rotate(100deg);
 }
 
-
 @media screen and (min-width: 768px) {
-
-    .accordion {
-        flex: 0 1 50%;
-    }
+  .accordion {
+    flex: 0 1 50%;
+  }
 }
